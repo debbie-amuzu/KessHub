@@ -1,0 +1,92 @@
+import React from 'react'
+import PropTypes from 'prop-types' // Add if you're using prop-types
+import aboutImg from '../assets/images/hero1.png'
+import { FaBolt, FaEye, FaEnvelope } from 'react-icons/fa' // Import React Icons
+
+const About = () => {
+  const handleContactClick = () => {
+    // Add your contact button click handler here
+    console.log('Contact button clicked')
+  }
+
+  return (
+    <div className="min-h-screen bg-blue-100  w-full py-16">
+      <div className="   sm:px-6 ">
+        {/* Header Section */}
+        <div className="text-center mb-16">
+          <h1 className="text-5xl font-mono font-bold italic text-gray-900 mb-4">About Us</h1>
+          
+        </div>
+
+        {/* Main Content */}
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+          {/* Image Section */}
+          <div className="relative h-[100%] rounded-lg overflow-hidden shadow-xl">
+            <img 
+              src={aboutImg} 
+              alt="Car Service" 
+              className="w-full h-full object-cover"
+            />
+          </div>
+
+          {/* Text Content */}
+          <div className="space-y-6">
+            {/* Mission Section */}
+            <div className="bg-white p-6 rounded-lg shadow-md">
+              <h2 className="text-2xl font-bold text-gray-900 mb-4 flex items-center">
+                <span className="text-blue-600 mr-2">
+                  <FaBolt className="h-6 w-6" />
+                </span>
+                Our Mission
+              </h2>
+              <p className="text-gray-600 leading-relaxed">
+                We don&apos;t just sell cars—we keep them running at their best. From top-quality vehicle sales to expert repairs, 
+                we ensure every ride is smooth, safe, and reliable!
+              </p>
+            </div>
+
+            {/* Vision Section */}
+            <div className="bg-white p-6 rounded-lg shadow-md">
+              <h2 className="text-2xl font-bold text-gray-900 mb-4 flex items-center">
+                <span className="text-blue-600 mr-2">
+                  <FaEye className="h-6 w-6" />
+                </span>
+                Our Vision
+              </h2>
+              <p className="text-gray-600 leading-relaxed">
+                To be the leading automotive service provider, known for excellence, integrity, and customer satisfaction. 
+                We aim to revolutionize the car buying and servicing experience through innovation and dedication.
+              </p>
+            </div>
+
+            {/* Contact Section */}
+            <div className="bg-blue-600 p-6 rounded-lg shadow-md text-white">
+              <h2 className="text-2xl font-bold mb-4 flex items-center">
+                <span className="mr-2">
+                  <FaEnvelope className="h-6 w-6" />
+                </span>
+                Get in Touch
+              </h2>
+              <p className="leading-relaxed">
+                Ready to experience our exceptional service? Contact us today to schedule an appointment or learn more about our offerings.
+              </p>
+              <button 
+                type="button"
+                onClick={handleContactClick}
+                className="mt-4 bg-white text-blue-600 px-6 py-2 rounded-full font-semibold hover:bg-blue-50 transition-colors duration-300"
+              >
+                Contact Us
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  )
+}
+
+About.propTypes = {
+  // Add any props if needed
+}
+
+export default About

@@ -1,0 +1,7 @@
+.hero {
+    background-image: url("./assets/images/car6.jpg");
+    background-size: contain;
+    height: 100vh;
+    background-repeat: none;
+    z-index: 1;
+} 
