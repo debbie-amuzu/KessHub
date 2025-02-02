@@ -1,14 +1,14 @@
 import React from 'react'
-import { FaFacebook, FaInstagram, FaLinkedin, FaTwitter } from 'react-icons/fa';
+import {FaFacebook, FaInstagram, FaLinkedin, FaTimes,  } from 'react-icons/fa';
 
 const Footer = () => {
     return (
-      <footer className="bg-[rgb(23,79,133)] text-white h-[50%]">
+      <footer className="bg-[rgb(23,79,133)] text-white h-[30%]">
         <div className="max-w-7xl mx-auto px-4 py-12">
           <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
             {/* Company Info */}
             <div>
-              <h3 className="text-xl font-bold mb-4">Kess Hub</h3>
+              <h3 className="text-xl font-bold mb-4">Kess Automotive Hub</h3>
               <p className="text-gray-400">
                 Your trusted partner in finding the perfect vehicle and expect in
                 repairing them.
@@ -58,25 +58,25 @@ const Footer = () => {
             <div className="flex space-x-4">
               <a
                 href="#"
-                className= " p-2 rounded-full  hover:bg-blue-500 transition-colors duration-300"
+                className= " p-2 rounded-full  hover:text-blue-500 transition-colors duration-300"
               >
                 <FaFacebook size={40} />
               </a>
               <a
                 href="#"
-                className=" p-2 rounded-full hover:bg-blue-500 transition-colors duration-300"
+                className=" p-2 rounded-full hover:text-blue-500 transition-colors duration-300"
               >
-                <FaTwitter size={40} />
+                <FaTimes size={40} />
               </a>
               <a
                 href="#"
-                className="p-2 hover:bg-blue-500 transition-colors duration-300"
+                className="p-2 hover:text-blue-500 transition-colors duration-300"
               >
                 <FaInstagram size={40} />
               </a>
               <a
                 href="#"
-                className=" p-2 rounded-full hover:bg-blue-500 transition-colors duration-300"
+                className=" p-2 rounded-full hover:text-blue-500 transition-colors duration-300 "
               >
                 <FaLinkedin size={40} />
               </a>
@@ -84,7 +84,7 @@ const Footer = () => {
           </div>
   
           <div className="mt-8 border-t border-gray-800 pt-8 text-center">
-            <p className="text-gray-400">© 2024 KessHub. All rights reserved.</p>
+            <p className="text-gray-400">© 2025 Kess Automotive Hub. All rights reserved.</p>
           </div>
         </div>
       </footer>

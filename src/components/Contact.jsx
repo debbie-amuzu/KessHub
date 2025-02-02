@@ -1,14 +1,21 @@
 import React from 'react';
-import { FaFacebookF, FaInstagram, FaTwitter, FaLinkedinIn } from 'react-icons/fa';
+import { FaFacebookF, FaInstagram, FaLinkedinIn, FaTimes } from 'react-icons/fa';
+import Navbar from './Navbar';
+import con from '../assets/images/gal2.jpeg'
 
 const Contact = () => {
   return (
-    <div className='bg-blue-100 pt-20 pb-20'>
-    <div className="max-w-4xl mx-auto p-6 shadow-lg  rounded-lg bg-white">
+    <div>
+      <Navbar/>
+   
+    <div className='bg-blue-100 pt-20 pb-20 '>
+      
+    <div className="max-w-4xl mx-auto p-6 shadow-lg  rounded-lg mt-10 bg-white">
+    <img src={con}alt="" srcset=""  className='w-full h-72 object-fit border rounded-lg shadow-lg'/>
       <h1 className="text-5xl italic font-mono font-bold mb-6  text-center text-gray-800">Contact Us</h1>
       
       <div className="mb-4">
-        <p className="text-gray-700">We’re open for any suggestion or just to have a chat.</p>
+        <p className="text-gray-700">We're open for any suggestion or just to have a chat.</p>
       </div>
 
       <div className="mb-6">
@@ -48,7 +55,7 @@ const Contact = () => {
         
         <button
           type="submit"
-          className="bg-blue-700 text-white py-2 rounded hover:bg-blue-500 transition duration-200"
+          className="bg-[rgb(23,79,133)] text-white py-2 rounded w-52 hover:bg-blue-500 transition duration-200"
         >
           Send Message
         </button>
@@ -79,7 +86,7 @@ const Contact = () => {
             rel="noopener noreferrer"
             className="text-blue-400 hover:text-blue-600 transition duration-200"
           >
-            <FaTwitter className="text-2xl" />
+            <FaTimes className="text-2xl" />
           </a>
           <a
             href="https://www.linkedin.com/in/YourProfile"
@@ -93,7 +100,7 @@ const Contact = () => {
       </div>
     </div>
     </div>
-    
+    </div>
   );
 };
 
