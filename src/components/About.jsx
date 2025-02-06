@@ -17,14 +17,14 @@ const About = () => {
        
         {/* Header Section */}
         <div className="text-center mb-16">
-          <h1 className="text-5xl font-mono font-bold italic text-gray-900 mb-4 pt-10">About Us</h1>
+          <h1 className="text-4xl sm:text-5xl font-mono font-bold italic text-gray-900 mb-4 pt-10">About Us</h1>
           
         </div>
 
         {/* Main Content */}
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           {/* Image Section */}
-          <div className="relative h-[100%] rounded-lg overflow-hidden shadow-xl">
+          <div className="relative h-full rounded-lg overflow-hidden shadow-xl">
             <img 
               src={aboutImg} 
               alt="Car Service" 
@@ -36,7 +36,7 @@ const About = () => {
           <div className="space-y-6">
             {/* Mission Section */}
             <div className="bg-white p-6 rounded-lg shadow-md">
-              <h2 className="text-2xl font-bold text-gray-900 mb-4 flex items-center">
+              <h2 className="text-xl sm:text-2xl font-bold text-gray-900 mb-4 flex items-center">
                 <span className="text-blue-600 mr-2">
                   <FaBolt className="h-6 w-6" />
                 </span>
@@ -50,7 +50,7 @@ const About = () => {
 
             {/* Vision Section */}
             <div className="bg-white p-6 rounded-lg shadow-md">
-              <h2 className="text-2xl font-bold text-gray-900 mb-4 flex items-center">
+              <h2 className="text-xl sm:text-2xl font-bold text-gray-900 mb-4 flex items-center">
                 <span className="text-blue-600 mr-2">
                   <FaEye className="h-6 w-6" />
                 </span>
@@ -65,7 +65,7 @@ const About = () => {
 
             {/* why choose us */}
             <div className="bg-white p-6 rounded-lg shadow-md">
-              <h2 className="text-2xl font-bold text-gray-900 mb-4 flex items-center">
+              <h2 className="text-xl sm:text-2xl font-bold text-gray-900 mb-4 flex items-center">
                 <span className="text-blue-600 mr-2">
                   <FaBrain className="h-6 w-6" />
                 </span>
@@ -78,7 +78,7 @@ const About = () => {
 
             {/* Contact Section */}
             <div className="bg-[rgb(23,79,133)] p-6 rounded-lg shadow-md text-white">
-              <h2 className="text-2xl font-bold mb-4 flex items-center">
+              <h2 className="text-xl sm:text-2xl font-bold mb-4 flex items-center">
                 <span className="mr-2">
                   <FaEnvelope className="h-6 w-6" />
                 </span>

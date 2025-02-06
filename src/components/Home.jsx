@@ -9,7 +9,7 @@ import Cars from './Cars'
 
 const Home = () => {
   return (
-    <div>
+    <div className="flex flex-col min-h-screen">
       <Navbar />
       <Hero />
       {/* <About />

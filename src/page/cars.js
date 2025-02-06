@@ -1,7 +1,7 @@
 const cars = [
     {
         id: 1,
-        name: "Toyota ",
+        name: "Toyota",
         price: "30,000",
         image: "/src/assets/images/toyota.jpg",
         description: "Reliable family sedan with excellent fuel economy"
