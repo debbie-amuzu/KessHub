@@ -3,9 +3,9 @@ import {FaFacebook, FaInstagram, FaLinkedin, FaTimes,  } from 'react-icons/fa';
 
 const Footer = () => {
     return (
-      <footer className="bg-[rgb(23,79,133)] text-white h-[30%]">
+      <footer className="bg-[rgb(23,79,133)] text-white h-[20%]">
         <div className="max-w-7xl mx-auto px-4 py-12">
-          <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             {/* Company Info */}
             <div>
               <h3 className="text-xl font-bold mb-4">Kess Automotive Hub</h3>
@@ -16,7 +16,7 @@ const Footer = () => {
             </div>
   
             {/* Quick Links */}
-            <div>
+            <div className='pl-56'>
               <h4 className="text-lg font-semibold mb-4">Quick Links</h4>
               <ul className="space-y-2">
                 <li>
@@ -42,7 +42,7 @@ const Footer = () => {
               </ul>
             </div>
   
-            {/* Contact Info */}
+            {/* Contact Info
             <div>
               <h4 className="text-lg font-semibold mb-4">Contact Us</h4>
               <ul className="space-y-2 text-gray-400">
@@ -52,33 +52,33 @@ const Footer = () => {
                 <li>Email: info@kessshub.com</li>
               </ul>
             </div>
-  
+   */}
             
   
-            <div className="flex space-x-4">
+            <div className="flex space-x-4 pl-32">
               <a
                 href="#"
                 className= " p-2 rounded-full  hover:text-blue-500 transition-colors duration-300"
               >
-                <FaFacebook size={40} />
+                <FaFacebook size={30} />
               </a>
               <a
                 href="#"
                 className=" p-2 rounded-full hover:text-blue-500 transition-colors duration-300"
               >
-                <FaTimes size={40} />
+                <FaTimes size={30} />
               </a>
               <a
                 href="#"
                 className="p-2 hover:text-blue-500 transition-colors duration-300"
               >
-                <FaInstagram size={40} />
+                <FaInstagram size={30} />
               </a>
               <a
                 href="#"
                 className=" p-2 rounded-full hover:text-blue-500 transition-colors duration-300 "
               >
-                <FaLinkedin size={40} />
+                <FaLinkedin size={30} />
               </a>
             </div>
           </div>

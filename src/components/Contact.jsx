@@ -1,7 +1,11 @@
 import React from 'react';
-import { FaFacebookF, FaInstagram, FaLinkedinIn, FaTimes } from 'react-icons/fa';
+import { FaAddressBook, FaFacebookF, FaInstagram, FaLinkedinIn, FaMailBulk, FaPhone, FaTimes } from 'react-icons/fa';
 import Navbar from './Navbar';
 import con from '../assets/images/gal2.jpeg'
+import { Link } from 'react-router-dom';
+import { FaLocationPin } from 'react-icons/fa6';
+
+
 
 const Contact = () => {
   return (
@@ -19,13 +23,24 @@ const Contact = () => {
       </div>
 
       <div className="mb-6">
-        <h2 className="text-2xl font-semibold text-gray-800">Get in Touch</h2>
-        <p className="text-gray-600">Address: Ashongman Estates 21st Street, Accra, Ghana</p>
-        <p className="text-gray-600">Email: info@kesshub.com</p>
-        <p className="text-gray-600">Phone: +233 578 901 245</p>
+        <h2 className="text-2xl font-semibold text-gray-800 mb-5">Get in Touch</h2>
+        <p className="text-gray-600 flex gap-2 items-center"><FaAddressBook className='text-blue-600 text-lg' />Ashongman Estates Community Hospital, Accra, Ghana</p>
+        <p className="text-gray-600 flex gap-2 items-center"><FaMailBulk className='text-blue-900 text-lg'/> kofikessearthur@yahoo.com</p>
+        
+        <a
+          href="https://www.google.com/maps/search/?api=1&query=DIGITALADDRESS+GE-184-5279,+Accra,+Ghana"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="text-gray-600 underline hover:text-blue-800 transition duration-200 flex gap-2 items-center"
+        ><FaLocationPin className='text-red-600 text-lg'/>
+          DIGITALADDRESS GE-184-5279, Accra, Ghana
+        </a>
       </div>
 
-      <form className="flex flex-col mb-6">
+      <form className="flex flex-col mb-6" onSubmit={(e) => { 
+          e.preventDefault(); 
+          window.location.href = `mailto:kofikessearthur@yahoo.com?subject=${document.getElementById('subject').value}&body=${document.getElementById('message').value}`; 
+        }}>
         <label className="mb-2 text-gray-700" htmlFor="email">Email</label>
         <input
           type="email"
@@ -65,7 +80,7 @@ const Contact = () => {
         <h2 className="text-2xl font-semibold text-gray-800 mb-4">Follow Us Here</h2>
         <div className="flex justify-center space-x-6">
           <a
-            href="https://www.facebook.com/YourPage"
+            href="https://www.facebook.com/profile.php?id=100063974685967"
             target="_blank"
             rel="noopener noreferrer"
             className="text-blue-600 hover:text-blue-800 transition duration-200"
@@ -73,7 +88,7 @@ const Contact = () => {
             <FaFacebookF className="text-2xl" />
           </a>
           <a
-            href="https://www.instagram.com/YourProfile"
+            href="https://www.threads.net/@kess_hub_service_center?xmt=AQGzr6XHao0OMj1h9Fny4Oo4pFt96B-5dXLF3bAiaG6FZVE"
             target="_blank"
             rel="noopener noreferrer"
             className="text-pink-600 hover:text-pink-800 transition duration-200"
