@@ -6,8 +6,8 @@ const Cars = () => {
   return (
     <div>
       <Navbar />
-      <h1 className="text-center font-bold text-5xl font-mono pt-10 pb-5 italic">
-        Our Services
+      <h1 className="text-center font-bold text-5xl font-mono pt-20 pb-5 italic">
+        Our Showroom
       </h1>
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 max-w-full  px-4">
         {cars.map(car => (
