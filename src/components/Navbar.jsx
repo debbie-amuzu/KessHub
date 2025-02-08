@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import pic from "../assets/images/image1.png";
-import { FaFacebook, FaInstagram, FaLinkedin, FaTimes, FaBars, FaLinkedinIn, FaFacebookF } from "react-icons/fa";
+import {FaInstagram, FaLinkedin, FaTimes, FaBars, FaLinkedinIn, FaFacebookF } from "react-icons/fa";
 import { NavLink, Link } from "react-router-dom";
 
 const Navbar = () => {
@@ -57,45 +57,45 @@ const Navbar = () => {
       )}
 
       {/* Social Media Icons */}
-      <div className="hidden md:flex space-x-2 items-center pl-5 pb-2 text-white">
-        <span className="flex items-center justify-center h-10 w-10 border border-gray-300 rounded-full hover:bg-red-500 text-blue text-2xl">
+      <div className="hidden md:flex space-x-2 items-center pl-5  text-white">
+        <span className="flex items-center justify-center h-8 w-8 border border-gray-300 rounded-full hover:bg-red-500 text-blue text-2xl">
         <a
             href="https://www.twitter.com/YourProfile"
             target="_blank"
             rel="noopener noreferrer"
             className="text-blue-400 hover:text-blue-600 transition duration-200"
           >
-            <FaTimes className="text-2xl" />
+            <FaTimes className="text-lg" />
           </a>
         </span>
-        <span className="flex items-center justify-center h-10 w-10 border border-gray-300 rounded-full hover:bg-red-500 text-blue text-2xl">
+        <span className="flex items-center justify-center h-8 w-8 border border-gray-300 rounded-full hover:bg-red-500 text-blue text-2xl">
         <a
             href="https://www.facebook.com/profile.php?id=100063974685967"
             target="_blank"
             rel="noopener noreferrer"
-            className="text-blue-600 hover:text-blue-800 transition duration-200"
+            className="text-blue-600 hover:text-blue-800 transition duration-200 "
           >
-            <FaFacebookF className="text-2xl" />
+            <FaFacebookF className="text-lg" />
           </a>
         </span>
-        <span className="flex items-center justify-center h-10 w-10 border border-gray-300 rounded-full hover:bg-red-500 text-blue text-2xl">
+        <span className="flex items-center justify-center h-8 w-8 border border-gray-300 rounded-full hover:bg-red-500 text-blue text-2xl">
         <a
             href="https://www.threads.net/@kess_hub_service_center?xmt=AQGzr6XHao0OMj1h9Fny4Oo4pFt96B-5dXLF3bAiaG6FZVE"
             target="_blank"
             rel="noopener noreferrer"
             className="text-pink-600 hover:text-pink-800 transition duration-200"
           >
-            <FaInstagram className="text-2xl" />
+            <FaInstagram className="text-lg" />
           </a>
         </span>
-        <span className="flex items-center justify-center h-10 w-10 border border-gray-300 rounded-full hover:bg-red-500 text-blue text-2xl">
+        <span className="flex items-center justify-center h-8 w-8 border border-gray-300 rounded-full hover:bg-red-500 text-blue text-2xl">
         <a
             href="https://www.linkedin.com/in/YourProfile"
             target="_blank"
             rel="noopener noreferrer"
             className="text-blue-700 hover:text-blue-900 transition duration-200"
           >
-            <FaLinkedinIn className="text-2xl" />
+            <FaLinkedinIn className="text-lg" />
           </a>
         </span>
          
