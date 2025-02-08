@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import pic from "../assets/images/image1.png";
-import {FaInstagram, FaLinkedin, FaTimes, FaBars, FaLinkedinIn, FaFacebookF } from "react-icons/fa";
-import { NavLink, Link } from "react-router-dom";
+import {FaInstagram, FaTimes, FaBars, FaLinkedinIn, FaFacebookF } from "react-icons/fa";
+import { NavLink} from "react-router-dom";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false); // State to manage mobile menu
@@ -26,7 +26,7 @@ const Navbar = () => {
       </div>
 
       {/* Desktop Navigation */}
-      <div className="hidden md:flex items-center space-x-6 pl-36">
+      <div className="hidden md:flex items-center space-x-6">
         <ul className="flex space-x-2">
           <NavLink to='/' className="py-4 px-2 text-gray-300 font-medium text-lg hover:text-red-400 transition duration-300">Home</NavLink>
           <NavLink to="/About" className="py-4 px-2 text-gray-300 font-medium text-lg hover:text-red-400 transition duration-300">About Us</NavLink>
@@ -57,7 +57,7 @@ const Navbar = () => {
       )}
 
       {/* Social Media Icons */}
-      <div className="hidden md:flex space-x-2 items-center pl-5  text-white">
+      <div className="hidden md:flex space-x-2 items-center  text-white">
         <span className="flex items-center justify-center h-8 w-8 border border-gray-300 rounded-full hover:bg-red-500 text-blue text-2xl">
         <a
             href="https://www.twitter.com/YourProfile"
