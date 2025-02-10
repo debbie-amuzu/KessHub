@@ -56,28 +56,36 @@ const Footer = () => {
             
   
             <div className="flex space-x-4 pl-32">
-              <a
-                href="#"
-                className= " p-2 rounded-full  hover:text-blue-500 transition-colors duration-300"
+            <a
+            href="https://www.facebook.com/profile.php?id=100063974685967"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-white-400 hover:text-blue-200 transition duration-200"
               >
                 <FaFacebook size={30} />
               </a>
               <a
-                href="#"
-                className=" p-2 rounded-full hover:text-blue-500 transition-colors duration-300"
-              >
+            href="https://www.twitter.com/YourProfile"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-white-400 hover:text-blue-200 transition duration-200"
+          >
                 <FaTimes size={30} />
               </a>
               <a
-                href="#"
-                className="p-2 hover:text-blue-500 transition-colors duration-300"
-              >
+            href="https://www.threads.net/@kess_hub_service_center?xmt=AQGzr6XHao0OMj1h9Fny4Oo4pFt96B-5dXLF3bAiaG6FZVE"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-white-600 hover:text-blue-200 transition duration-200"
+          >
                 <FaInstagram size={30} />
               </a>
               <a
-                href="#"
-                className=" p-2 rounded-full hover:text-blue-500 transition-colors duration-300 "
-              >
+            href="https://www.linkedin.com/in/YourProfile"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-white-700 hover:text-blue-200 transition duration-200"
+          >
                 <FaLinkedin size={30} />
               </a>
             </div>
