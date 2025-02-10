@@ -1,6 +1,6 @@
 import React from 'react'
 import {FaFacebook, FaInstagram, FaLinkedin, FaTimes,  } from 'react-icons/fa';
-
+import { Link } from 'react-router-dom';
 const Footer = () => {
     return (
       <footer className="bg-[rgb(23,79,133)] text-white h-[20%]">
@@ -16,31 +16,33 @@ const Footer = () => {
             </div>
   
             {/* Quick Links */}
-            <div className='pl-56'>
-              <h4 className="text-lg font-semibold mb-4">Quick Links</h4>
-              <ul className="space-y-2">
-                <li>
-                  <a href="/cars" className="text-gray-400 hover:text-white">
-                    Browse Cars
-                  </a>
-                </li>
-                <li>
-                  <a href="/services" className="text-gray-400 hover:text-white">
-                    Services
-                  </a>
-                </li>
-                <li>
-                  <a href="/about" className="text-gray-400 hover:text-white">
-                    About Us
-                  </a>
-                </li>
-                <li>
-                  <a href="/contact" className="text-gray-400 hover:text-white">
-                    Contact
-                  </a>
-                </li>
-              </ul>
-            </div>
+           
+<div className='pl-56'>
+  <h4 className="text-lg font-semibold mb-4">Quick Links</h4>
+  <ul className="space-y-2">
+    <li>
+      <Link to="/cars" className="text-gray-400 hover:text-white">
+        Browse Cars
+      </Link>
+    </li>
+    <li>
+      <Link to="/services" className="text-gray-400 hover:text-white">
+        Services
+      </Link>
+    </li>
+    <li>
+      <Link to="/about" className="text-gray-400 hover:text-white">
+        About Us
+      </Link>
+    </li>
+    <li>
+      <Link to="/contact" className="text-gray-400 hover:text-white">
+        Contact
+      </Link>
+    </li>
+  </ul>
+</div>
+
   
             {/* Contact Info
             <div>
