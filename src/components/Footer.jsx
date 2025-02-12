@@ -8,8 +8,8 @@ const Footer = () => {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             {/* Company Info */}
             <div>
-              <h3 className="text-xl font-bold mb-4">Kess Automotive Hub</h3>
-              <p className="text-gray-400">
+              <h3 className="text-md font-bold mb-4">Kess Automotive Hub</h3>
+              <p className="text-gray-400 text-sm">
                 Your trusted partner in finding the perfect vehicle and expect in
                 repairing them.
               </p>
@@ -18,8 +18,8 @@ const Footer = () => {
             {/* Quick Links */}
            
 <div className='pl-56'>
-  <h4 className="text-lg font-semibold mb-4">Quick Links</h4>
-  <ul className="space-y-2">
+  <h4 className="text-md font-semibold mb-4">Quick Links</h4>
+  <ul className="space-y-2 text-sm">
     <li>
       <Link to="/cars" className="text-gray-400 hover:text-white">
         Browse Cars
